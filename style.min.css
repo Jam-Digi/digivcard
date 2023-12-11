@@ -97,19 +97,13 @@ header {
   grid-template-rows: auto;
   position: fixed;
   top: 0;
-  right: 30%;
   overflow: hidden;
+  width: 100%;
+  max-width: 30rem;
+  background-color: #fff;
+  border-radius: 5px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .headerImgC {
-    right: 40%;
-  }
-}
-@media only screen and (min-width: 1024px){
-  .headerImgC {
-    right: 45%;
-  }
-}
+
 #cover {
   grid-column: 1;
   grid-row: 1;
@@ -131,20 +125,16 @@ header {
   grid-row: 1;
   align-self: center;
   justify-self: center;
-
-  background-color: #fff;
-  padding: 2px 5px;
-  border-radius: 5px;
 }
 
 .fixedElement {
   display: none;
   background-color: transparent;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 35%;
-  width:25%;
-  z-index:100;
+  width: 25%;
+  z-index: 100;
 }
 
 #topActions {
