@@ -89,12 +89,26 @@ header {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin-top: 13rem;
 }
 .headerImgC {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  position: fixed;
+  top: 0;
+  right: 30%;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .headerImgC {
+    right: 40%;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .headerImgC {
+    right: 45%;
+  }
 }
 #cover {
   grid-column: 1;
@@ -117,7 +131,19 @@ header {
   grid-row: 1;
   align-self: center;
   justify-self: center;
+ 
 }
+
+.fixedElement {
+  display: none;
+  background-color: transparent;
+  position:fixed;
+  top: 0;
+  left: 35%;
+  width:25%;
+  z-index:100;
+}
+
 #topActions {
   flex-direction: row-reverse;
   justify-content: space-between;
