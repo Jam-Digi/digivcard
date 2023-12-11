@@ -131,7 +131,10 @@ header {
   grid-row: 1;
   align-self: center;
   justify-self: center;
- 
+
+  background-color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 .fixedElement {
